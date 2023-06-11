@@ -1,0 +1,2 @@
+const e=document.querySelector(".breed-select");console.dir(e),fetch("https://api.thecatapi.com/v1/breeds?key=API_KEY").then((e=>(console.log(e),e.json()))).then((o=>{console.log(o),e.innerHTML=o.map((e=>`<option value="${e.id}">${e.name}</option>`)).join("\n")})),e.addEventListener("change",(function(e){const o=e.currentTarget.value;console.log(o),(n=o,fetch(`https://api.thecatapi.com/v1/images/search?breed_ids=${n}&key=API_KEY`).then((e=>(console.log(e),e.json())))).then((e=>{console.log(e)}));var n}));
+//# sourceMappingURL=index.3c8ac02a.js.map
