@@ -17,6 +17,11 @@ img {
   max-width: 100%;
 }
 
+h2,
+p {
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -26,6 +31,33 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.cat-info {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 10px;
+}
+
+.text-header {
+  margin-bottom: 10px;
+}
+.text-temperament {
+  margin-top: 10px;
+}
+
+.text-temperament span {
+  font-weight: 700;
+}
+
+.loader,
+.error {
+  font-weight: 500;
+}
+
+.error {
+  color: #ff0000;
 }
 
 .hidden {
